@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- SBU Bean -->
+    <bean id="sbuBean" class="Task2.SBU">
+        <property name="sbuId"   value="101"/>
+        <property name="sbuName" value="Product Engineering Services"/>
+        <property name="sbuHead" value="Kiran Rao"/>
+    </bean>
+
+    <!-- Employee Bean — note: Employe not Employee -->
+    <bean id="employeeBean" class="Task2.Employe">
+        <property name="employeeId"   value="12345"/>
+        <property name="employeeName" value="Harriet"/>
+        <property name="salary"       value="40000.0"/>
+        <property name="businessUnit" ref="sbuBean"/>
+    </bean>
+
+</beans>

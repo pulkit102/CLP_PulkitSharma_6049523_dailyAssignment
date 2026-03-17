@@ -1,0 +1,26 @@
+package Task3;
+
+public class Employee1 {
+
+    private int employeeId;
+    private String employeeName;
+    private double salary;
+
+    public Employee1() {}
+
+    public int getEmployeeId() { return employeeId; }
+    public void setEmployeeId(int employeeId) { this.employeeId = employeeId; }
+
+    public String getEmployeeName() { return employeeName; }
+    public void setEmployeeName(String employeeName) { this.employeeName = employeeName; }
+
+    public double getSalary() { return salary; }
+    public void setSalary(double salary) { this.salary = salary; }
+
+    @Override
+    public String toString() {
+        return "Employee [empAge=30, empId=" + employeeId +
+                ", empName=" + employeeName +
+                ", empSalary=" + salary + "]";
+    }
+}
